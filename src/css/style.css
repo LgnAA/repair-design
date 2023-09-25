@@ -327,6 +327,11 @@ template {
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding-top: 24px;
   padding-bottom: 22px;
@@ -372,6 +377,8 @@ template {
   background: #131313 url("../img/hero-bg.jpg") center/cover no-repeat;
   height: 100vh;
   color: #FFFFFF;
+  margin-top: 86px;
+  padding-top: 70px;
 }
 .hero__instagram {
   position: absolute;
