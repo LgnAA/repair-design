@@ -1,12 +1,3 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Futura Book", sans-serif;
-  font-size: 14px;
-}
-
 @font-face {
   font-family: "Futura Book";
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
@@ -336,6 +327,33 @@ template {
   display: none;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Futura Book", sans-serif;
+  font-size: 14px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Yeseva One Regular", serif;
+}
+.section-title__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title__image::before, .section-title__image::after {
+  content: "";
+  background-color: #E3B873;
+  width: 32px;
+  height: 2px;
+  margin: 10px;
+}
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -419,6 +437,8 @@ template {
 .hero::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(19, 19, 19, 0.7);
