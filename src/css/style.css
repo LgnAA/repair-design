@@ -364,11 +364,6 @@ body {
   margin: auto;
 }
 
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 12px;
-  }
-}
 .header {
   position: fixed;
   left: 0;
@@ -476,7 +471,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 92px;
+  max-width: 6.57rem;
   height: 100%;
 }
 .hero__scroll-down {
@@ -486,8 +481,8 @@ body {
   align-items: center;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.64rem;
+  min-height: 6.93rem;
   background: #131313;
   text-transform: uppercase;
   text-decoration: none;
@@ -529,4 +524,59 @@ body {
 
 .title--primary {
   color: #E3B873;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  .nav__item {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    margin-left: 0;
+  }
+  .hero__instagram {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .contacts__button {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .hero__scroll-down {
+    display: none;
+  }
+  .hero__content {
+    max-width: 22.86rem;
+    margin-left: 0rem;
+    align-items: center;
+  }
+  .hero__text {
+    font-size: 1.5rem;
+    margin-bottom: 2.67rem;
+  }
+  .hero__button {
+    display: block;
+    min-width: 28rem;
+    margin-top: 2.16rem;
+  }
+}
+@media screen and (max-height: 540px) {
+  .hero__scroll-down {
+    display: none;
+  }
 }
