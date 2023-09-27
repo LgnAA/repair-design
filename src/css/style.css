@@ -331,9 +331,13 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: "Futura Book", sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .section-title {
@@ -360,6 +364,11 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
 .header {
   position: fixed;
   left: 0;
@@ -382,9 +391,10 @@ body {
 }
 .menu .nav__item {
   color: #FFFFFF;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   transition: color 0.2s;
 }
 .menu .nav__item:hover {
@@ -405,7 +415,7 @@ body {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.94rem;
 }
 .button:hover {
   cursor: pointer;
@@ -445,10 +455,11 @@ body {
 }
 .hero__content {
   position: relative;
-  max-width: 670px;
+  max-width: 47.85rem;
+  margin-left: 4.28rem;
 }
 .hero__text {
-  font-size: 22px;
+  font-size: 1.57rem;
   font-weight: 400;
   max-width: 504px;
 }
@@ -457,7 +468,7 @@ body {
 }
 .hero__title {
   font-family: "Yeseva One Regular", serif;
-  font-size: 40px;
+  font-size: 2.85rem;
   text-transform: uppercase;
   font-weight: 400;
 }
