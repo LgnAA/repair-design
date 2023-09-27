@@ -465,6 +465,7 @@ body {
   margin-top: 2rem;
   margin-right: 19px;
   padding: 18px 27px;
+  min-width: 14.785rem;
 }
 .hero__title {
   font-family: "Yeseva One Regular", serif;
