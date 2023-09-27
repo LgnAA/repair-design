@@ -557,13 +557,13 @@ body {
   }
 }
 @media screen and (max-width: 570px) {
-  .contacts__phone {
+  .menu .contacts__button {
+    display: none;
+  }
+  .menu .contacts__phone {
     margin-right: 0;
     color: #FFFFFF;
     text-decoration: none;
-  }
-  .contacts__button {
-    display: none;
   }
   .title {
     font-size: 2rem;
