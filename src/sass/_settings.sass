@@ -11,19 +11,29 @@ body
   padding: 60px
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One Regular', serif
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One Regular', serif
+      font-size: 20px
+    &__description
+      margin: auto
+      margin-top: 1.64rem
+      font-size: 1.428rem
+      line-height: 120%
+      max-width: 53rem
+      max-height: 4rem
     &__image
       display: flex
       justify-content: center
       align-items: center
+      
       &::before, &::after
         content: ''
         background-color: $primary
         width: 32px
         height: 2px
         margin:  10px
-    &__imagerepair
+    &__imagecheat
       display: flex
       justify-content: center
       align-items: center

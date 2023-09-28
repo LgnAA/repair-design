@@ -12,6 +12,34 @@
       margin-left: 0rem
   .nav
     display: none
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+    align-items: center
+  .col .card
+    &__image
+      display: block
+      margin: auto
+      min-width: 340px
+      min-height: 365px
+    &__text
+      margin: 0
+      margin-top: -12rem
+      font-size: 1.083rem
+      line-height: 169.8%
+      max-width: 22.5rem
+      max-height: 22.08rem
+      padding: 31px 52px 55px 37px
+    &__title
+      font-size: 1.25rem
+      line-height: 138.6%
+    &__pricetag
+      max-height: 40px
+      max-width: 190px
+      bottom: -1.6rem
+  .types
+    &__card
+      margin-bottom: 6rem
 @media screen and ( max-width: 570px )
   .menu
     .contacts
@@ -21,6 +49,11 @@
         margin-right: 0
         color: $light
         text-decoration: none
+  .section
+    &-title
+      &__description
+        max-width: 25.5rem
+        font-size: 1.25rem
   .title
     font-size: 2rem
   .hero
@@ -37,6 +70,12 @@
       display: block
       min-width: 28rem
       margin-top: 2.16rem
+  .design
+    background-color: $dark
+    &__section-title
+      color: $light 
+    &__card
+      margin-bottom: 6.5rem
 @media screen and ( max-height: 540px  )
   .hero
     &__scroll-down
