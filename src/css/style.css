@@ -339,7 +339,13 @@ body {
   font-family: "Futura Book", sans-serif;
   font-size: 1rem;
 }
+body img {
+  max-width: 100%;
+}
 
+.section {
+  padding: 60px;
+}
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -356,6 +362,18 @@ body {
   width: 32px;
   height: 2px;
   margin: 10px;
+}
+.section-title__imagerepair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title__imagerepair::before, .section-title__imagerepair::after {
+  content: "";
+  background-color: #E3B873;
+  width: 32px;
+  height: 2px;
+  margin: -30px;
 }
 
 .container {
@@ -390,7 +408,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin-right: 2.5rem;
+  margin-right: 40px;
   transition: color 0.2s;
 }
 .menu .nav__item:hover {
@@ -537,6 +555,71 @@ body {
   color: #E3B873;
 }
 
+.types__section-title {
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 33%;
+}
+.col .card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin-top: -9.3rem;
+  margin-left: 2.45rem;
+  padding: 1.79rem 2.14rem;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
+}
+.col .card__title {
+  font-family: "Yeseva One Regular", serif;
+  font-size: 1.29rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+.col .card__list {
+  padding: 0 0 0 1.4rem;
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  font-family: "Futura Book", sans-serif;
+  color: #959595;
+  margin-bottom: 2.5rem;
+}
+.col .card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.8rem;
+  font-size: 1.29rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Yeseva One Regular", serif;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #FFFFFF;
+  padding: 1.2rem 2.85rem;
+  min-width: 228px;
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col .card__text {
+    margin: 0;
+    margin-top: -14rem;
+  }
+  .types__card {
+    margin-bottom: 6rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -546,11 +629,11 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
-  .hero {
-    margin-left: 0;
-  }
   .hero__instagram {
     display: none;
+  }
+  .hero__content {
+    margin-left: 0rem;
   }
   .nav {
     display: none;
