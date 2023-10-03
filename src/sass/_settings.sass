@@ -9,12 +9,36 @@ body
     max-width: 100%
 .section
   padding: 60px
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
+    &--left
+      text-align: left
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        height: 1px
+        width: 92px
+        margin-left: 2rem
+        background-color: $primary
     &__heading
       text-transform: uppercase
       font-family: 'Yeseva One Regular', serif
       font-size: 20px
+      font-weight: 400
+      &--primary
+        color: $primary
+        font-size: 27px
+        line-height: 138.6%
+      
     &__description
       margin: auto
       margin-top: 1.64rem
