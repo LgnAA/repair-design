@@ -360,6 +360,7 @@ body img {
   font-size: 1.28rem;
   line-height: 2.07rem;
   max-width: 31.57rem;
+  margin-bottom: 3rem;
 }
 .section-title__word {
   display: flex;
@@ -380,8 +381,9 @@ body img {
 }
 .section-title__heading--primary {
   color: #E3B873;
-  font-size: 27px;
+  font-size: 1.928rem;
   line-height: 138.6%;
+  margin-bottom: 2.42rem;
 }
 .section-title__description {
   margin: auto;
@@ -676,6 +678,55 @@ body img {
 .title--primary {
   line-height: 1.4;
   color: #E3B873;
+}
+
+.swiper {
+  width: 679px;
+  min-height: 240px;
+}
+.swiper-button-prev, .swiper-button-next {
+  width: 42px;
+  height: 14px;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg");
+  left: 0;
+}
+.swiper-button-next {
+  background: url("../img/arrow-next.svg");
+}
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+}
+.swiper-slide__heading {
+  font-family: "Yeseva One Regular", serif;
+  font-size: 1.285rem;
+  font-weight: 400;
+  line-height: 1.78rem;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin-bottom: 0.642rem;
+}
+.swiper-slide__text {
+  flex-basis: 50%;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets, .swiper-horizontal > .swiper-pagination-bullets {
+  width: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  bottom: 0.6rem;
 }
 
 .types__section-title {

@@ -66,4 +66,27 @@ $(document).ready(function () {
       scrollTop: $(this).offset().top - $(".hero").height()}, 2000);
     return false;
   });
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+// размеры и отступы стрелочек сладера
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination-horizontal.swiper-pagination-bullets');
+  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width() + 10 + bullets.width()+10)
 });

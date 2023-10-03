@@ -1,0 +1,38 @@
+.swiper
+  width: 679px
+  min-height: 240px
+  // slider documentation
+  &-button  
+    &-prev, &-next
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      background: url('../img/arrow-prev.svg')
+      left: 0
+    &-next
+      background: url('../img/arrow-next.svg')
+  &-pagination
+    &-bullets 
+    &-bullet
+        background-color: rgba($light, 0.5)
+        &-active
+          background-color: rgba($light, 1)
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &__heading
+      font-family: 'Yeseva One Regular', serif
+      font-size: 1.285rem
+      font-weight: 400
+      line-height: 1.78rem
+      text-transform: uppercase
+      color: $primary
+      margin-bottom: 0.642rem
+    &__text
+      flex-basis: 50%
+.swiper-pagination-horizontal.swiper-pagination-bullets, .swiper-horizontal>.swiper-pagination-bullets
+  width: auto
+.swiper-button-next, .swiper-button-prev
+  bottom: 0.6rem
