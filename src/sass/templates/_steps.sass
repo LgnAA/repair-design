@@ -10,6 +10,7 @@
       flex-basis: 25.1%
       line-height: 138.6%
     &--heading
+      position: relative
       display: flex
       font-family: 'Yeseva One Regular', serif
       font-weight: 400
@@ -17,8 +18,11 @@
       margin-bottom: 0.6rem
       &::after
         content: ''
-        height: 10px
-        width: 1px
+        position: absolute
+        height: 1px
+        width: 16px
+        bottom: 0
+        left: 0
         background-color: $primary
     &--value
       display: block
@@ -47,7 +51,7 @@
 .swiper
   &__steps
     width: 805px
-    min-height: 421px
+    min-height: 400px
 .steps
   &-button  
     &-prev, &-next

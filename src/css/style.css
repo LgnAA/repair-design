@@ -830,6 +830,7 @@ body img {
   line-height: 138.6%;
 }
 .steps__slide--heading {
+  position: relative;
   display: flex;
   font-family: "Yeseva One Regular", serif;
   font-weight: 400;
@@ -838,8 +839,11 @@ body img {
 }
 .steps__slide--heading::after {
   content: "";
-  height: 10px;
-  width: 1px;
+  position: absolute;
+  height: 1px;
+  width: 16px;
+  bottom: 0;
+  left: 0;
   background-color: #E3B873;
 }
 .steps__slide--value {
@@ -870,7 +874,7 @@ body img {
 
 .swiper__steps {
   width: 805px;
-  min-height: 421px;
+  min-height: 400px;
 }
 
 .steps-button-prev, .steps-button-next {
