@@ -1,6 +1,30 @@
 .steps
   background: $dark
   color: $light
+  &__slide
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 7rem
+    &--text
+      flex-basis: 25.1%
+      line-height: 138.6%
+    &--heading
+      display: flex
+      font-family: 'Yeseva One Regular', serif
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 0.6rem
+      &::after
+        content: ''
+        height: 10px
+        width: 1px
+        background-color: $primary
+    &--value
+      display: block
+      max-width: 130px
+      font-size: 15px
+      margin-bottom: 1.75rem
 .section
   &-title
     &__top
@@ -18,3 +42,30 @@
         line-height: 1.9rem
         font-size: 15px
         max-width: 25.4rem
+        margin-bottom: 1rem
+// slider documentation
+.swiper
+  &__steps
+    width: 805px
+    min-height: 421px
+.steps
+  &-button  
+    &-prev, &-next
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      background: url('../img/arrow-prev.svg')
+      left: 0
+    &-next
+      background: url('../img/arrow-next.svg')
+  &-pagination 
+    &-bullet
+        background-color: rgba($light, 0.5)
+        &-active
+          background-color: rgba($light, 1)
+.swiper-pagination-horizontal.swiper-pagination-bullets, .swiper-horizontal>.swiper-pagination-bullets
+  width: auto
+.swiper-button-next, .swiper-button-prev
+  margin-top: 6.6rem
