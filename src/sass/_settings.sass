@@ -21,15 +21,20 @@ body
       line-height: 2.07rem
       max-width: 31.57rem
       margin-bottom: 3rem
-    &__word
+    &__word, &__steps
       display: flex
       align-items: center
       &::after
         content: ''
         height: 1px
         width: 92px
-        margin-left: 2rem
         background-color: $primary
+    &__word
+      &::after
+        margin-left: 2rem
+    &__steps
+      &::after
+        margin-left: 6.57rem
     &__heading
       text-transform: uppercase
       font-family: 'Yeseva One Regular', serif
@@ -40,7 +45,6 @@ body
         font-size: 1.928rem
         line-height: 138.6%
         margin-bottom: 2.42rem
-      
     &__description
       margin: auto
       margin-top: 1.64rem
@@ -52,7 +56,6 @@ body
       display: flex
       justify-content: center
       align-items: center
-      
       &::before, &::after
         content: ''
         background-color: $primary
@@ -69,4 +72,11 @@ body
         width: 32px
         height: 2px
         margin:  -30px
-      
+  &-subtitle
+    font-family: 'Yeseva One Regular', serif
+    font-size: 15px
+    line-height: 150.15%
+    font-weight: 400
+    text-transform: uppercase
+    color: $primary
+    max-width: 11.4rem

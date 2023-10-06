@@ -362,16 +362,21 @@ body img {
   max-width: 31.57rem;
   margin-bottom: 3rem;
 }
-.section-title__word {
+.section-title__word, .section-title__steps {
   display: flex;
   align-items: center;
 }
-.section-title__word::after {
+.section-title__word::after, .section-title__steps::after {
   content: "";
   height: 1px;
   width: 92px;
-  margin-left: 2rem;
   background-color: #E3B873;
+}
+.section-title__word::after {
+  margin-left: 2rem;
+}
+.section-title__steps::after {
+  margin-left: 6.57rem;
 }
 .section-title__heading {
   text-transform: uppercase;
@@ -417,6 +422,15 @@ body img {
   height: 2px;
   margin: -30px;
 }
+.section-subtitle {
+  font-family: "Yeseva One Regular", serif;
+  font-size: 15px;
+  line-height: 150.15%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #E3B873;
+  max-width: 11.4rem;
+}
 
 .container {
   width: 85%;
@@ -432,6 +446,9 @@ body img {
 
 .col-30 {
   flex-basis: 32.7%;
+}
+.col-40 {
+  flex-basis: 40%;
 }
 .col-50 {
   flex-basis: 50%;
@@ -792,6 +809,29 @@ body img {
   margin: 0;
   margin-top: -8.9rem;
   margin-left: 3rem;
+}
+
+.steps {
+  background: #131313;
+  color: #FFFFFF;
+}
+
+.section-title__top {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.section-title__middle {
+  font-family: "Yeseva One Regular", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 138.6%;
+  text-transform: uppercase;
+  margin-top: 6.3rem;
+}
+.section-title__steps--description {
+  line-height: 1.9rem;
+  font-size: 15px;
+  max-width: 25.4rem;
 }
 
 .modal {
