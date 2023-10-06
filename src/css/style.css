@@ -752,7 +752,8 @@ body img {
 .types__card {
   margin-top: 1rem;
 }
-.types .card__text {
+
+.card__text {
   position: relative;
   max-width: 23.45rem;
   margin-top: -9.34rem;
@@ -762,14 +763,14 @@ body img {
   background: #FFFFFF;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.03);
 }
-.types .card__title {
+.card__title {
   font-family: "Yeseva One Regular", serif;
   font-size: 1.285rem;
   line-height: 138.6%;
   margin-top: 0;
   margin-bottom: 0.4rem;
 }
-.types .card__list {
+.card__list {
   padding: 0 0 0 1.1rem;
   margin: 0;
   font-size: 1.07rem;
@@ -778,7 +779,7 @@ body img {
   color: #959595;
   margin-bottom: 2.5rem;
 }
-.types .card__pricetag {
+.card__pricetag {
   position: absolute;
   left: 0;
   bottom: -1.8rem;
