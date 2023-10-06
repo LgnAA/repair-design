@@ -682,7 +682,7 @@ body img {
 
 .swiper {
   width: 679px;
-  min-height: 240px;
+  min-height: 230px;
 }
 .swiper-button-prev, .swiper-button-next {
   width: 42px;
@@ -726,7 +726,7 @@ body img {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  bottom: 0.6rem;
+  margin-top: 6.6rem;
 }
 
 .types__section-title {
