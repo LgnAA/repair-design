@@ -356,6 +356,9 @@ body img {
 .section-title--left {
   text-align: left;
 }
+.section-title--light {
+  color: #FFFFFF;
+}
 .section-title__text {
   font-size: 1.28rem;
   line-height: 2.07rem;
@@ -700,6 +703,10 @@ body img {
   color: #E3B873;
 }
 
+.projects {
+  padding-bottom: 30rem;
+}
+
 .swiper {
   width: 679px;
   min-height: 230px;
@@ -747,6 +754,80 @@ body img {
 
 .swiper-button-next, .swiper-button-prev {
   margin-top: 6.6rem;
+}
+
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem;
+}
+.control__video {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/img-video.jpg") center no-repeat;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+.control__video::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 4.285rem;
+  text-align: center;
+  font-size: 1.428rem;
+  line-height: 2.42rem;
+}
+.control__text::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 2.1rem;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px;
+}
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 55rem;
+  margin: auto;
+}
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.control__label {
+  margin-bottom: -1px;
+}
+.control__button {
+  padding: 1.285rem 4.785rem;
+}
+.control__input {
+  border: none;
+  border-bottom: 1px solid;
+}
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1.2rem;
+}
+.control__policy--label {
+  justify-content: center;
+}
+
+.video__play {
+  position: relative;
+  margin: auto;
 }
 
 .types__section-title {
