@@ -588,6 +588,14 @@ body img {
   width: 100%;
 }
 
+label.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -1098,7 +1106,9 @@ body img {
   flex-direction: column;
   margin-top: 0.1 rem;
 }
-.modal__input {
+.modal__input-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3.9rem;
   margin-top: 0.2rem;
 }
