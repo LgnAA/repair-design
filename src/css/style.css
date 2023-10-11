@@ -1003,6 +1003,11 @@ input.invalid {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;
 }
+.footer__map {
+  max-width: 66rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
 .footer__wrap {
   background-color: #181818;
   max-width: 63.07rem;
